@@ -1,0 +1,9 @@
+com.motorola.motocit.usb.UsbTypeC
+com.motorola.motocit.capsense.CapsenseMul
+com.motorola.motocit.display.testPatterns.WhiteWithBlackBorder
+com.motorola.motocit.fingerprint.FingerPrintTest
+com.motorola.motocit.vibrator.VibratorTest
+com.motorola.motocit.headset.HeadsetInfo
+com.motorola.motocit.hostmode.Hostmode
+com.motorola.motocit.key.KeyTest
+com.motorola.motocit.camera2.Rear3Viewfinder

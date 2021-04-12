@@ -1,0 +1,27 @@
+{
+  "config":{
+    "hw_platform": ["IDP"],
+    "soc_id": ["394"]
+  },
+  "mot_dsp_0_platform":{
+    "owner": "mot_dsp",
+    ".config":{
+      "owner": "mot_dsp",
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "25"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

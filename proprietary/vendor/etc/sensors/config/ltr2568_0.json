@@ -1,0 +1,91 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "336", "341", "394"]
+  },
+  "ltr2568_0":{
+    "owner": "sns_ltr2568",
+	".proximity":{
+      "owner": "sns_ltr2568",
+      ".config":{
+        "owner": "sns_ltr2568",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+	".custom":{
+      "owner": "sns_ltr2568",
+      ".config":{
+        "owner": "sns_ltr2568",
+        "sample_rate_als":{ "type": "flt", "ver": "0",
+          "data": "5.0"
+        },
+        "sample_rate_ps":{ "type": "flt", "ver": "0",
+          "data": "5.0"
+        },
+        "target_ps_xt":{ "type": "flt", "ver": "0",
+          "data": "300.0"
+        },
+        "ps_led":{ "type": "flt", "ver": "0",
+          "data": "111"
+        },
+        "ps_pulses":{ "type": "flt", "ver": "0",
+          "data": "175"
+        },
+        "ps_meas_rate":{ "type": "flt", "ver": "0",
+          "data": "4"
+        },
+        "als_int_time":{ "type": "flt", "ver": "0",
+          "data": "5"
+        },
+        "ps_thres_up_offset_1":{ "type": "flt", "ver": "0",
+          "data": "100"
+        },
+        "ps_thres_up_offset_2":{ "type": "flt", "ver": "0",
+          "data": "120"
+        },
+        "ps_thres_up_offset_3":{ "type": "flt", "ver": "0",
+          "data": "130"
+        },
+        "ps_thres_up_offset_4":{ "type": "flt", "ver": "0",
+          "data": "140"
+        },
+        "ps_thres_up_offset_5":{ "type": "flt", "ver": "0",
+          "data": "150"
+        },
+        "ps_thres_up_offset_6":{ "type": "flt", "ver": "0",
+          "data": "1500"
+        },
+        "ps_thres_low_offset_1":{ "type": "flt", "ver": "0",
+          "data": "75"
+        },
+        "ps_thres_low_offset_2":{ "type": "flt", "ver": "0",
+          "data": "80"
+        },
+        "ps_thres_low_offset_3":{ "type": "flt", "ver": "0",
+          "data": "55"
+        },
+        "ps_thres_low_offset_4":{ "type": "flt", "ver": "0",
+          "data": "60"
+        },
+        "ps_thres_low_offset_5":{ "type": "flt", "ver": "0",
+          "data": "65"
+        },
+        "ps_thres_low_offset_6":{ "type": "flt", "ver": "0",
+          "data": "1300"
+        }
+      }
+    }
+  }
+}

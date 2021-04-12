@@ -1,0 +1,34 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["394"]
+  },
+  "mot_dsp_0":{
+    "owner": "mot_dsp",
+    ".mot_dsp":{
+      "owner": "mot_dsp",
+      ".config":{
+        "owner": "mot_dsp",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".algo_config":{
+        "owner": "mot_dsp",
+        "stowed_gpio":{ "type": "int", "ver": "0",
+          "data": "26"
+        }
+      }
+    }
+  }
+}
