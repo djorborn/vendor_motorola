@@ -157,41 +157,12 @@
 		<mappings>
 			<!-- Variants describe mapping of feature combinations to device fingerprints,
 				to be set in property indicated by "export" -->
-			<variants-device export="ro.vendor.hw.variant" append="ro.vendor.product.device,ro.product.device">
+			<variants export="ro.vendor.hw.variant" append="ro.vendor.product.device,ro.vendor.product.name,ro.product.device,ro.product.name">
 				<!-- NFC variant -->
 				<variant name="_n">
 					<string name="nfc">true</string>
 				</variant>
-			</variants-device>
-			<variants-product export="ro.vendor.hw.variant" append="ro.vendor.product.name,ro.product.name">
-				<variant name="_one">
-					<string name="ro.boot.carrier">retmea</string>
-					<string name="nfc">false</string>
-				</variant>
-				<variant name="_one_n">
-					<string name="ro.boot.carrier">retmea</string>
-					<string name="nfc">true</string>
-				</variant>
-				<!-- NFC variant -->
-				<variant name="_n">
-					<string name="nfc">true</string>
-				</variant>
-			</variants-product>
-			<products-1 export="ro.vendor.product.display" default="moto g&#x2078; plus">
-				<product name="motorola one vision plus" >
-					<string name="ro.boot.carrier">retmea</string>
-				</product>
-			</products-1>
-			<products-2 export="ro.product.model" default="moto g(8) plus">
-				<product name="motorola one vision plus" >
-					<string name="ro.boot.carrier">retmea</string>
-			</product>
-			</products-2>
-			<products-3 export="ro.vendor.product.model" default="moto g(8) plus">
-				<product name="motorola one vision plus" >
-					<string name="ro.boot.carrier">retmea</string>
-				</product>
-			</products-3>
+			</variants>
 
 			<!-- SKUs describe mapping of feature combinations to factory SKUs,
 				to be set in property indicated by "export" -->

@@ -7,9 +7,6 @@ on fs && property:ro.boot.carrier=reteu
 on fs && property:ro.boot.carrier=reteu2
     setprop persist.vendor.radio.suppress_ussd_rel 1
 
-on fs && property:ro.boot.carrier=teleu
-    setprop persist.vendor.radio.suppress_ussd_rel 1
-
 on fs && property:ro.boot.carrier=amxbr
     setprop persist.vendor.radio.use_se_table_only 1
 

@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter doha,$(TARGET_DEVICE)),)
+ifneq ($(filter rav sofia sofiap sofiar doha,$(TARGET_DEVICE)),)
 
 endif

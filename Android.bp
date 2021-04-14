@@ -20,17 +20,36 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libplatformconfig",
+	name: "libqmi_cci",
 	owner: "motorola",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libplatformconfig.so"],
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libplatformconfig.so"],
+			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -39,31 +58,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "CACertService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "ConnectionSecurityService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -83,32 +80,10 @@ android_app_import {
 }
 
 android_app_import {
-	name: "SSGTelemetryService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "TrustZoneAccessService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
-	certificate: "platform",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -138,17 +113,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "embms",
-	owner: "motorola",
-	apk: "proprietary/product/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "uceShimService",
 	owner: "motorola",
 	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
@@ -156,42 +120,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleHALO",
-	owner: "motorola",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHALO/HotwordEnrollmentOKGoogleHALO.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleHALO",
-	owner: "motorola",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHALO/HotwordEnrollmentXGoogleHALO.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "ims",
-	owner: "motorola",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 	product_specific: true,
 }
 
@@ -232,55 +160,6 @@ dex_import {
 }
 
 dex_import {
-	name: "QtiTelephonyServicelibrary",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.nxp.nfc",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.nxp.nfc.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.qualcomm.qti.imscmservice-V2.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.qualcomm.qti.imscmservice-V2.1-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.qualcomm.qti.imscmservice-V2.2-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.qualcomm.qti.uceservice-V2.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.qualcomm.qti.uceservice-V2.1-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "com.quicinc.cne.api-V1.1-java",
 	owner: "motorola",
 	jars: ["proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar"],
@@ -309,27 +188,6 @@ dex_import {
 }
 
 dex_import {
-	name: "embmslibrary",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/embmslibrary.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/qcrilhook.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.data.factory-V1.0-java",
 	owner: "motorola",
 	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
@@ -354,13 +212,6 @@ dex_import {
 	name: "vendor.qti.data.slm-V1.0-java",
 	owner: "motorola",
 	jars: ["proprietary/product/framework/vendor.qti.data.slm-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.alarm-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
 	product_specific: true,
 }
 
@@ -421,13 +272,6 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.data.latency-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.hardware.data.qmi-V1.0-java",
 	owner: "motorola",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
@@ -439,64 +283,6 @@ dex_import {
 	owner: "motorola",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
 	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.wigig.netperftuner-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.wigig.supptunnel-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.ims.callinfo-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.ims.rcsconfig-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.ims.rcsconfig-V1.1-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.latency-V2.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.voiceprint-V1.0-java",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar"],
-	product_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.atrace@1.0-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
 }
 
 prebuilt_etc_xml {

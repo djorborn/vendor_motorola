@@ -18,11 +18,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm6125-common
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sm6125-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/motorola/sm6125-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/motorola/sm6125-common/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/motorola/sm6125-common/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/motorola/sm6125-common/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/motorola/sm6125-common/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/motorola/sm6125-common/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/sm6125-common/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
@@ -33,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/sm6125-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/motorola/sm6125-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/motorola/sm6125-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/motorola/sm6125-common/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/motorola/sm6125-common/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/motorola/sm6125-common/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
@@ -42,25 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/motorola/sm6125-common/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
     vendor/motorola/sm6125-common/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-perfd-client_system.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-util_system.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti_performance.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc_system.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsinksm.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
-    vendor/motorola/sm6125-common/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
     vendor/motorola/sm6125-common/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/motorola/sm6125-common/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
     vendor/motorola/sm6125-common/proprietary/lib64/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxMux.so \
@@ -72,43 +50,34 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmparser_lite.so \
     vendor/motorola/sm6125-common/proprietary/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpdecoder.so \
     vendor/motorola/sm6125-common/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-perfd-client_system.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-util_system.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_performance.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libseemore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libseemore.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdcommonutils.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmminterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmmsink.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdrtsp.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsinksm.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsm.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcinterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsink.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsinkinterface.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
-    vendor/motorola/sm6125-common/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
     vendor/motorola/sm6125-common/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
-    vendor/motorola/sm6125-common/proprietary/product/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.nxp.nfc.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
+    vendor/motorola/sm6125-common/proprietary/product/etc/permissions/privapp-permissions-org.codeaurora.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-org.codeaurora.ims.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
-    vendor/motorola/sm6125-common/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_hidl_wrapper.xml \
-    vendor/motorola/sm6125-common/proprietary/product/etc/permissions/qti_telephony_utils.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_utils.xml \
+    vendor/motorola/sm6125-common/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/motorola/sm6125-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
-    vendor/motorola/sm6125-common/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/embmslibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.0-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.1-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
+    vendor/motorola/sm6125-common/proprietary/product/framework/vendor.qti.latency-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.api@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.api@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.constants@1.0.so \
@@ -125,20 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.10.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.11.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.12.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.2.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.4.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.5.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.6.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.7.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.8.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.9.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@2.1.so \
@@ -150,8 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.gnss@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.gnss@3.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.cvp@1.0.so \
@@ -166,53 +119,34 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.perf@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.am@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.3.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.vpp@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.latency@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@1.0.so \
@@ -229,20 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.10.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.11.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.12.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.2.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.4.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.5.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.6.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.7.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.8.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.config@1.9.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@2.1.so \
@@ -254,8 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.cvp@1.0.so \
@@ -272,106 +190,41 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.factory@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.factory@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.vpp@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/product/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.latency@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/app/QDMA-UI/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/QDMA-UI/lib/arm64/libvndfwk_detect_jni.qti.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/app/QDMA/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/QDMA/lib/arm64/libvndfwk_detect_jni.qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/aplogcat:$(TARGET_COPY_OUT_VENDOR)/bin/aplogcat \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/aplogd:$(TARGET_COPY_OUT_VENDOR)/bin/aplogd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/batch:$(TARGET_COPY_OUT_VENDOR)/bin/batch \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/bc:$(TARGET_COPY_OUT_VENDOR)/bin/bc \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/bl_notify:$(TARGET_COPY_OUT_VENDOR)/bin/bl_notify \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/bootloaderlog:$(TARGET_COPY_OUT_VENDOR)/bin/bootloaderlog \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/cplay:$(TARGET_COPY_OUT_VENDOR)/bin/cplay \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/devmem:$(TARGET_COPY_OUT_VENDOR)/bin/devmem \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_callback_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_callback_sample \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_dci_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_dci_sample \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_mdlog-getlogs:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-getlogs \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_mdlog-wrap:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-wrap \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/expat:$(TARGET_COPY_OUT_VENDOR)/bin/expat \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fastrpc_tests_apps:$(TARGET_COPY_OUT_VENDOR)/bin/fastrpc_tests_apps \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fmfactorytest:$(TARGET_COPY_OUT_VENDOR)/bin/fmfactorytest \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fmfactorytestserver:$(TARGET_COPY_OUT_VENDOR)/bin/fmfactorytestserver \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fpc_tee_test:$(TARGET_COPY_OUT_VENDOR)/bin/fpc_tee_test \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/fsync:$(TARGET_COPY_OUT_VENDOR)/bin/fsync \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ftm_flows_test:$(TARGET_COPY_OUT_VENDOR)/bin/ftm_flows_test \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ftmipcd:$(TARGET_COPY_OUT_VENDOR)/bin/ftmipcd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ftmtest:$(TARGET_COPY_OUT_VENDOR)/bin/ftmtest \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/getconf:$(TARGET_COPY_OUT_VENDOR)/bin/getconf \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/getconfig:$(TARGET_COPY_OUT_VENDOR)/bin/getconfig \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/getfattr:$(TARGET_COPY_OUT_VENDOR)/bin/getfattr \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hbtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hbtp_daemon \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/host_manager_11ad:$(TARGET_COPY_OUT_VENDOR)/bin/host_manager_11ad \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hsic_test:$(TARGET_COPY_OUT_VENDOR)/bin/hsic_test \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.atrace@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.atrace@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc \
@@ -384,148 +237,60 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.gnss@2.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.0-service-qti \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.3-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.3-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.health@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.light@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.light@2.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.2-service-qti \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.power@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.vibrator@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/com.motorola.hardware.display.panel@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/com.motorola.hardware.display.panel@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/egis_ident:$(TARGET_COPY_OUT_VENDOR)/bin/hw/egis_ident \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/fpc_ident:$(TARGET_COPY_OUT_VENDOR)/bin/hw/fpc_ident \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.imgtuner@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/motorola.hardware.health@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.health@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/motorola.hardware.vibrator@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.vibrator@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.allocator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.allocator-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetracker@1.1-service \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/i2cdetect:$(TARGET_COPY_OUT_VENDOR)/bin/i2cdetect \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/i2cdump:$(TARGET_COPY_OUT_VENDOR)/bin/i2cdump \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/i2cget:$(TARGET_COPY_OUT_VENDOR)/bin/i2cget \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/i2cset:$(TARGET_COPY_OUT_VENDOR)/bin/i2cset \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/iconv:$(TARGET_COPY_OUT_VENDOR)/bin/iconv \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/install:$(TARGET_COPY_OUT_VENDOR)/bin/install \
+    vendor/motorola/sm6125-common/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/masterclear:$(TARGET_COPY_OUT_VENDOR)/bin/masterclear \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/mbm_spy:$(TARGET_COPY_OUT_VENDOR)/bin/mbm_spy \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/memtest_mode:$(TARGET_COPY_OUT_VENDOR)/bin/memtest_mode \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/mm-qjpeg-dec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-dec-test \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/mm-qjpeg-enc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-enc-test \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/mm-vidc-omx-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-vidc-omx-test \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/nc:$(TARGET_COPY_OUT_VENDOR)/bin/nc \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/netcat:$(TARGET_COPY_OUT_VENDOR)/bin/netcat \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/nproc:$(TARGET_COPY_OUT_VENDOR)/bin/nproc \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/nsenter:$(TARGET_COPY_OUT_VENDOR)/bin/nsenter \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ptf:$(TARGET_COPY_OUT_VENDOR)/bin/ptf \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/qdss_qmi_helper:$(TARGET_COPY_OUT_VENDOR)/bin/qdss_qmi_helper \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/qjpeg-dma-test:$(TARGET_COPY_OUT_VENDOR)/bin/qjpeg-dma-test \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/qmi_simple_ril_test:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_simple_ril_test \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/sendevent2:$(TARGET_COPY_OUT_VENDOR)/bin/sendevent2 \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/setconfig:$(TARGET_COPY_OUT_VENDOR)/bin/setconfig \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/setfattr:$(TARGET_COPY_OUT_VENDOR)/bin/setfattr \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/shell_11ad:$(TARGET_COPY_OUT_VENDOR)/bin/shell_11ad \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/tcmd:$(TARGET_COPY_OUT_VENDOR)/bin/tcmd \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/test:$(TARGET_COPY_OUT_VENDOR)/bin/test \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/test_diag:$(TARGET_COPY_OUT_VENDOR)/bin/test_diag \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/testapp_diag_senddata:$(TARGET_COPY_OUT_VENDOR)/bin/testapp_diag_senddata \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/tinymix:$(TARGET_COPY_OUT_VENDOR)/bin/tinymix \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/tinyplay:$(TARGET_COPY_OUT_VENDOR)/bin/tinyplay \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/tloc_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tloc_daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/ufsgetsn:$(TARGET_COPY_OUT_VENDOR)/bin/ufsgetsn \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/unlink:$(TARGET_COPY_OUT_VENDOR)/bin/unlink \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/unshare:$(TARGET_COPY_OUT_VENDOR)/bin/unshare \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/uuidgen:$(TARGET_COPY_OUT_VENDOR)/bin/uuidgen \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/watch:$(TARGET_COPY_OUT_VENDOR)/bin/watch \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/wigig_wiburn:$(TARGET_COPY_OUT_VENDOR)/bin/wigig_wiburn \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/wigighalsvc:$(TARGET_COPY_OUT_VENDOR)/bin/wigighalsvc \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/wigignpt:$(TARGET_COPY_OUT_VENDOR)/bin/wigignpt \
     vendor/motorola/sm6125-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
-    vendor/motorola/sm6125-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Codec_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Handset_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/bt_stack_level6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bt_stack_level6.conf \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/cameraconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraconfig.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/dual_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden.bin \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/mot_ov16885_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_ov16885_chromatix.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/mot_s5k2x5sp_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5k2x5sp_chromatix.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/mot_s5k5e9_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5k5e9_chromatix.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/camera/mot_s5kgm1sp_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5kgm1sp_chromatix.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -558,37 +323,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/5GNR_LTE_CN_V9.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/5GNR_LTE_CN_V9.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/ADSP-sensor.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/ADSP-sensor.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Bluetooth-WLAN-coex_V01.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Bluetooth-WLAN-coex_V01.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Bluetooth_V1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Bluetooth_V1.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Bluetooth_split_audio_V1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Bluetooth_split_audio_V1.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Connection_Issues_V13_with_RF_and_tuner_log.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Connection_Issues_V13_with_RF_and_tuner_log.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Connection_Issues_V14.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Connection_Issues_V14.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/DIAG_WLAN_Modem_AS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/DIAG_WLAN_Modem_AS.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/DIAG_WLAN_Modem_no_AS.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/DIAG_WLAN_Modem_no_AS.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/FIT_V23_4_audio.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/FIT_V23_4_audio.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/FIT_V24_1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/FIT_V24_1.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/FIT_V24_2_volte_full_ip.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/FIT_V24_2_volte_full_ip.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/FIT_V24_3_audio.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/FIT_V24_3_audio.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/GNSS_v9.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/GNSS_v9.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/MM_audio_playback_capture_v2.0.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/MM_audio_playback_capture_v2.0.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/QC_default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/QC_default.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Sensors_for_670_6150_8150_and_later.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Sensors_for_670_6150_8150_and_later.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Tx_Antenna_Switching.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Tx_Antenna_Switching.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Vzw_Connection_Issues_V4.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Vzw_Connection_Issues_V4.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/WLAN_V1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/WLAN_V1.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/Wlan_V2.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Wlan_V2.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/diag_mdlog/default.opts:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.opts \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
@@ -601,303 +335,55 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.3-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.health@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.light@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.light@2.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.memtrack@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.memtrack@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.power@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.vibrator@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/com.motorola.hardware.display.panel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.motorola.hardware.display.panel@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/hw/init.mmi.charge_only.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.charge_only.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/motorola.hardware.health@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/motorola.hardware.vibrator@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.vibrator@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/tloc_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tloc_daemon.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp-NQ3XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-NQ3XX.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp-NQ4XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-NQ4XX.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_default.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp_rf1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_rf1.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-mtp_rf2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_rf2.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd-NQ3XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-NQ3XX.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd-NQ4XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-NQ4XX.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_default.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd_rf1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_rf1.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/libnfc-qrd_rf2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_rf2.conf \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/1kHz_Audio_Mono.wav:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/1kHz_Audio_Mono.wav \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/1kR1_5kL7s.wav:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/1kR1_5kL7s.wav \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/2kHz_Audio_Mono.wav:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/2kHz_Audio_Mono.wav \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/2kHz_Mono_1s.wav:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/2kHz_Mono_1s.wav \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/audio_cal.wav:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/audio_cal.wav \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/batch/DCPDetection.bat:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/batch/DCPDetection.bat \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/batch/DCPDetectionReadFile.bat:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/batch/DCPDetectionReadFile.bat \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_alt_cfg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_alt_cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_cfg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_cfg_model_assembly:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_cfg_model_assembly \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_cfg_model_mmi:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_cfg_model_mmi \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_mmi_mode_order:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_mmi_mode_order \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_pat_mode_order:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_pat_mode_order \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/cqatest_sequence_mode_order:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_sequence_mode_order \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/focaltech-tm_ft8719_fhd_vid-ft8719-doha.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-tm_ft8719_fhd_vid-ft8719-doha.ini \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/key_code_map.txt:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/key_code_map.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/12m/tcmd_leds.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/tcmd_leds.cfg \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_FE12MB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_FE12MB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_QE13MB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_QE13MB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_RC14MB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_RC14MB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_RC1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_RC1BMB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_RE1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_RE1BMB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_RX14MB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_RX14MB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/firmware/emmc_ffu_15_RX1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/emmc_ffu_15_RX1BMB.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/mdmctbk/ctbk_cfg.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/motorola/tcmd/cid_template.dat:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.dat \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_ds_1080p_630.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_ds_1080p_630.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_630.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_630.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/scc-hal-config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/scc-hal-config.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/ak991x_polling_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_polling_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bma2x2_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bma2x2_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bme680_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bme680_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bmg160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmg160_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi160_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bmm150_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmm150_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp285_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bu52053nvx_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/cm3526_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/cm3526_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/default_sensors.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/dps368_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/dps368_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/icp101xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icp101xx_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6ds3_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6ds3_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dsm_0_16g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0_16g.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dsm_0_8g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0_8g.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dso_0_16g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0_16g.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/lsm6dso_0_8g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0_8g.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/ltr2568_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ltr2568_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/ltr308_0_on_change.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ltr308_0_on_change.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc5603x_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/mot_chopchop.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_chopchop.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/mot_devorient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_devorient.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/mot_dsp_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_dsp_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/mot_ltv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_ltv.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_ak991x_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_bmp285_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_bu52053nvx_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_icm4x6xx_0-i3c.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_icm4x6xx_0-i3c.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_lsm6dso_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_ltr2568_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_ltr2568_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_mmc5603x_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_mot_dsp_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_mot_dsp_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_qrd_ak991x_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_qrd_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_qrd_lsm6dso_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_qrd_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_qrd_tmd2725.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_tmd2725.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_tmd2750.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_tmd2750.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/nicobar_tsl2540.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/nicobar_tsl2540.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_1.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_2.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/rpr0521rs_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/shtw2_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/shtw2_0.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmd2725.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/tmd2750.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmd2750.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/tmx4903.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmx4903.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/config/tsl2540.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2540.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/simlock_template.dat:$(TARGET_COPY_OUT_VENDOR)/etc/simlock_template.dat \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sysconfig/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/unavail.android.hardware.nfc.hce.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sysconfig/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/unavail.android.hardware.nfc.hcef.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sysconfig/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/unavail.android.hardware.nfc.uicc.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/sysconfig/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/unavail.android.hardware.nfc.xml \
-    vendor/motorola/sm6125-common/proprietary/vendor/etc/thermal-engine-doha.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-doha.conf \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/wigig_p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_p2p_supplicant.conf \
+    vendor/motorola/sm6125-common/proprietary/vendor/etc/wifi/wigig_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_supplicant.conf \
     vendor/motorola/sm6125-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/FT8006U_Pramboot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/FT8006U_Pramboot.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/a612_rgmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a612_rgmu.bin \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_gmu.bin \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/a640_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_gmu.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Argo_Navis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Argo_Navis.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Attentive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Attentive.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Awake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Awake.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Bird_Loop.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Bird_Loop.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Brilliant_Times.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Brilliant_Times.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Chimey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Chimey_Phone.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Complex.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Complex.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Crazy_Dream.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Crazy_Dream.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Curve_Ball_Blend.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Digital_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Digital_Phone.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Electrovision.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Electrovision.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Ether_Shake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Ether_Shake.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Fateful_Words.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Fateful_Words.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Flutey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Flutey_Phone.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Future_Funk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Funk.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Future_Hi_Tech.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Hi_Tech.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Girtab.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Girtab.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Hello.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hello.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Hexagon.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hexagon.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Hydra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hydra.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Insert_Coin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Insert_Coin.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Jumping_Dots.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Jumping_Dots.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Keys.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Keys.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Loopy.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Loopy_Lounge.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy_Lounge.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Modular.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Modular.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Momentum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Momentum.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Morning.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Morning.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Natural.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Natural.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_New_Player.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_New_Player.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Onward.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Onward.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Organ_Dub.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Organ_Dub.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Overclocked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Overclocked.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Pegasus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pegasus.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Pyxis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pyxis.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Regrade.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Regrade.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Scarabaeus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Scarabaeus.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Sceptrum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sceptrum.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Simple.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Simple.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Solarium.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Solarium.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Sparse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sparse.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/aw8695_rtp_Terrabytes.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Terrabytes.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_12_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_1.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_5_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_5_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_1.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/crus_sp_rx0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx0.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/crus_sp_rx1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx1.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/crus_sp_rx2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx2.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/crus_sp_rx3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx3.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-diag.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-diag.wmfw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-prot.wmfw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-rcv-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-rcv-cali.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-rcv-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-rcv-prot.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/cs48l32-dsp1-aox.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs48l32-dsp1-aox.wmfw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/ds_Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ds_Himax_firmware.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/focaltech-ft8719-a0-0000-doha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-ft8719-a0-0000-doha.bin \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/himax-HX83112A-doha.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-HX83112A-doha.csv \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria.csv \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -905,23 +391,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/motorola/sm6125-common/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/rcv_fast_switch1.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/rcv_fast_switch1.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/rcv_fast_switch2.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/rcv_fast_switch2.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/spk_fast_switch1.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk_fast_switch1.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/spk_fast_switch2.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk_fast_switch2.txt \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/wigig/wigig.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wigig/wigig.ini \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
-    vendor/motorola/sm6125-common/proprietary/vendor/firmware/wlan/qca_cld/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/android.hardware.audio.common@5.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@5.0-util.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.hardware.display.panel@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.1.so \
@@ -935,43 +409,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/ese_client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/ese_spi_nxp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/ftm_fm_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hal_libnfc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.audio.effect@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@5.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.audio@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@5.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.drm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.drm@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.light@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.light@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.power@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.power@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.sensors@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.vibrator@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/camera.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/displaypanel.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/displaypanel.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/gralloc.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/hwcomposer.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.trinket.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/lights.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/memtrack.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/motorola.hardware.camera.imgtuner@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.camera.imgtuner@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/motorola.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.vibrator@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/power.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.qcom.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/sound_trigger.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.trinket.so \
@@ -979,17 +441,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/hw/vulkan.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
@@ -1009,7 +466,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEGL_adreno.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
@@ -1024,16 +480,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxCore.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMux_proprietary.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVenc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
@@ -1041,7 +492,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSubSystemShutdown.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/lib_motsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_motsensorlistener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -1055,210 +505,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadspd.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libandroidicu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libandroidicu.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaoa.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libarbitrarybytes.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarbitrarybytes.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libaudiohalcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiohalcm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libc2dcolorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2dcolorconvert.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_cpp_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_zsl_preview_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov02a_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov02a_zsl_video_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_default_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_hfr_120_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_hfr_60_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_zsl_preview_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov12a10ff_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov12a10ff_zsl_video_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_3a_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_3a_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_3a_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_3a_zsl_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_3a_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_3a_zsl_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16885_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16885_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_25m_3a_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_25m_3a_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_25m_3a_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_25m_3a_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_25m_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_25m_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_25m_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_25m_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_3a_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_3a_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_3a_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_3a_zsl_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_3a_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_3a_zsl_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16a1q_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16a1q_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_3a_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_3a_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_3a_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_3a_zsl_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_3a_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_3a_zsl_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov16e10_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov16e10_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_ov8856_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_ov8856_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_25m_3a_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_25m_3a_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_25m_3a_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_25m_3a_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_25m_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_25m_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_25m_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_25m_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_3a_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_3a_zsl_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_3a_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_3a_zsl_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k2x5sp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k2x5sp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_cpp_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_zsl_preview_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k4h7_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k4h7_zsl_video_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_cpp_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_video_full.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_zsl_preview_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5k5e9_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5k5e9_zsl_video_3a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_3a_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_3a_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_3a_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_3a_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_3a_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_3a_zsl_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_3a_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_3a_zsl_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_liveshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot_custom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_snapshot_downscale.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_cpp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_hfr_120.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_hfr_240.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_hfr_60.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_postproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_preview.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_snapshot.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchromatix_mot_s5kgm1sp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_s5kgm1sp_video.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchrome.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwcommon.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwhidl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmapwrapper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplaydebug.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
@@ -1267,11 +538,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libets_fp_et5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libets_fp_et5.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libets_teeclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libets_teeclient.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
@@ -1292,25 +559,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libhal_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhal_dbg.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpclient.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpdsp.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpfrmwk.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libicui18n.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicui18n.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libicuuc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicuuc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdmahw.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
@@ -1321,223 +579,53 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmdmcutback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmcutback.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_is.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct_shimlayer.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pp_buf_mgr.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_q3a_core.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_stats_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dbg.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_depth_map.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_depth_map.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eebinparse.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eeprom_util.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eztune_module.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_facedetection_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_add_constant.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_grid_sum.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_abf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_aec_bg_stats47.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bf_stats47.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_bg_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bg_stats46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bhist_stats44.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_black_level48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_black_level48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_bpc48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bpc48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_cac47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cac47.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_enhan40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_suppress40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_encoder40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_video40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_viewfinder40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_color_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_correct46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_encoder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_video46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_viewfinder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_cs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cs_stats46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_demosaic48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demosaic48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_demux48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demux48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_encoder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_video46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_viewfinder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_gamma44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gamma44.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_gic48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gic48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_gtm46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gtm46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_hdr48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_hdr_be_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr_be_stats46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr_bhist_stats44.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_ihist_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ihist_stats46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_linearization40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_ltm47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ltm47.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_luma_adaptation40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mce40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_mesh_rolloff44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mesh_rolloff44.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_pdaf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_pdaf48.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_pedestal_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_pedestal_correct46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_rs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_rs_stats46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_encoder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_scaler_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_video46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_viewfinder46.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_snr47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_snr47.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov02a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov02a.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov02a_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov02a_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov12a10ff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov12a10ff.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16885.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16885.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16885_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16885_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16a1q.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16a1q_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16a1q_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16e10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16e10.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov16e10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov16e10_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov8856.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_ov8856_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov8856_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5k2x5sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k2x5sp.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5k2x5sp_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k2x5sp_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k4h7.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5k4h7_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k4h7_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5k5e9.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k5e9.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5kgm1sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5kgm1sp.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_mot_s5kgm1sp_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5kgm1sp_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppbase_module.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_s5k5e9_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e9_eeprom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stillmore_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sw2d_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_thread_services.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmcamera_vstab_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vstab_module.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmlib2d_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmlib2d_interface.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser_lite_proprietary.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmot_gpu_mapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_gpu_mapper.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libmotimager_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotimager_utils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_nr_fusion.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libopus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopus.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpkip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkip.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpn551_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn551_fw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn557_fw.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdMetaData.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmimotext.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqservice.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_vndfwk_detect.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libreverse_rpc_tests_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libreverse_rpc_tests_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-hal-qmi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscc_audio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscc_audio.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscc_dummy_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscc_dummy_loader.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscc_generic_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscc_generic_loader.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscc_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscc_utils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
@@ -1551,75 +639,29 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskewknob.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_amrnb_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_amrnb_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_enc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_enc_common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_flacdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_aacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacenc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_amrdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_amrnbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrnbenc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_amrwbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrwbenc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_avcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_avcdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_avcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_avcenc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_flacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacenc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_g711dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_g711dec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_gsmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_gsmdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_hevcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_hevcdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mp3dec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_mpeg2dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg2dec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_mpeg4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg4dec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_mpeg4enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg4enc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_opusdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_opusdec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_rawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_rawdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_vorbisdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vorbisdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_vpxdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vpxdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_soft_vpxenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vpxenc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_softomx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libtpa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtpa.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunshorten.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libvorbisidec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvorbisidec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-ctrl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwigig_flashaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwigig_flashaccess.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwigig_ftm_flows.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwigig_ftm_flows.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwigig_pciaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwigig_pciaccess.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/libwigig_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwigig_utils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
@@ -1628,9 +670,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/motorola.hardware.camera.imgtuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.imgtuner@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/motorola.hardware.tcmd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.tcmd@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.vibrator@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_nxp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtimutex.so \
@@ -1639,7 +678,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
@@ -1648,43 +691,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libbenchmark_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libbenchmark_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libfastrpc_tests1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libfastrpc_tests1_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libfastrpc_tests_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libfastrpc_tests_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libhap_power_test_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libhap_power_test_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/librpcperf1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/librpcperf1_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/librpcperf_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/librpcperf_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl1_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_perf1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_perf1_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_perf_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_perf_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/libunsigned_pd_test_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libunsigned_pd_test_skel.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_dep1.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_dep1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_dep2.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_dep2.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_nop.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_nop.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_128k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_128k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_16k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_16k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_1MB.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_1MB.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_256k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_256k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_32k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_32k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_512k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_512k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_64k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_64k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_768k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_768k.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hal.tof.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/sensors.rp.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.rp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/sensors.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.tof.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib/sensors.tof.vl53l1.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.tof.vl53l1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvoiceprocessing.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.cirrus.SccHalAudioContext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.cirrus.SccHalAudioContext@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.cirrus.SccHalSoundTriggerContext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.cirrus.SccHalSoundTriggerContext@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
@@ -1701,12 +718,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.7.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.8.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.9.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.egistec.hardware.fingerprint@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.eventprocessor@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpese@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfc@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
@@ -1719,14 +730,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.gnss@3.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0-service.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.automotive.vehicle@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_dun@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_dun@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cacert@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cvp@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -1741,65 +745,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@3.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.5.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.6.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.servicetracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.servicetracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.servicetracker@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.servicetracker@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -1813,37 +783,26 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ftm_fm_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hal_libnfc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.light@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.light@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.power@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.power@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.vibrator@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/displaypanel.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/displaypanel.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/gralloc.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/hwcomposer.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.trinket.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/lights.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/memtrack.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/motorola.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.vibrator@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/power.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.qcom.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/sound_trigger.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.trinket.so \
@@ -1851,17 +810,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/hw/vulkan.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.trinket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
@@ -1895,14 +849,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDecSw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxCore.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Dec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVencMpeg4.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVenc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
@@ -1913,7 +862,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadropbox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadropbox.so \
@@ -1921,58 +869,40 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadspd.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libarbitrarybytes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarbitrarybytes.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaudiohalcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiohalcm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libc2dcolorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2dcolorconvert.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwcommon.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwhidl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libets_fp_et5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_fp_et5.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libets_teeclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_teeclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
@@ -1988,9 +918,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloccore.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpclient.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpdsp.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpfrmwk.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
@@ -1999,19 +926,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/liblmutils-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmutils-ns.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
@@ -2025,25 +948,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmdmcutback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmcutback.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmemperfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemperfd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_frame_algorithm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_is.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera2_stats_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_lib.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_dbg.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmparser_lite_proprietary.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
@@ -2054,11 +962,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn553_fw.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
@@ -2073,31 +977,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_helper.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmimotext.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsap_sdk.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqservice.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti_vndfwk_detect.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libreverse_rpc_tests_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreverse_rpc_tests_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
@@ -2108,20 +1005,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscc_audio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscc_audio.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscc_dummy_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscc_dummy_loader.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscc_generic_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscc_generic_loader.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscc_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscc_utils.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
@@ -2137,37 +1020,26 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_qtiflacdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libstagefright_softomx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_softomx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsuspend.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsuspend.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libtpa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtpa.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunshorten.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-ctrl.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwigig_flashaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_flashaccess.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwigig_ftm_flows.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_ftm_flows.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwigig_pciaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_pciaccess.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwigig_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_utils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
@@ -2177,16 +1049,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.imgtuner@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.vibrator@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/motorola.hardware.wifi.supplicant@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.wifi.supplicant@1.0_vendor.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hal.tof.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.dt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.dt.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.rp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.rp.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.tof.so \
+    vendor/motorola/sm6125-common/proprietary/vendor/lib64/sensors.tof.vl53l1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.tof.vl53l1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
@@ -2194,12 +1064,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvoiceprocessing.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.cirrus.SccHalAudioContext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.cirrus.SccHalAudioContext@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.cirrus.SccHalSoundTriggerContext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.cirrus.SccHalSoundTriggerContext@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -2216,13 +1080,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.8.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.9.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
@@ -2235,14 +1093,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.gnss@3.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0-service.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_dun@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_dun@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -2261,8 +1112,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.0.so \
@@ -2290,19 +1139,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.servicetracker@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.servicetracker@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
@@ -2314,8 +1154,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/motorola/sm6125-common/proprietary/vendor/pds:$(TARGET_COPY_OUT_VENDOR)/pds \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/10_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_qcrildb.sql \
@@ -2325,58 +1163,36 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/14_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/14_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/15_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/15_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/16_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/16_version_qcrildb.sql \
-    vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/17_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/17_version_qcrildb.sql \
-    vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/18_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/18_version_qcrildb.sql \
-    vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/19_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/19_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/7_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_qcrildb.sql \
     vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_qcrildb.sql \
-    vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql \
-    vendor/motorola/sm6125-common/proprietary/vendor/tombstones:$(TARGET_COPY_OUT_VENDOR)/tombstones
+    vendor/motorola/sm6125-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 PRODUCT_PACKAGES += \
-    libplatformconfig \
-    CACertService \
+    libqmi_cci \
+    libqmi_common_so \
     CneApp \
-    ConnectionSecurityService \
     IWlanService \
-    SSGTelemetryService \
     TimeService \
-    TrustZoneAccessService \
     QtiTelephonyService \
     datastatusnotification \
-    embms \
     uceShimService \
-    HotwordEnrollmentOKGoogleHALO \
-    HotwordEnrollmentXGoogleHALO \
-    ims \
     qcrilmsgtunnel \
     audiosphere \
     com.qti.location.sdk \
     izat.xt.srv \
     tcmclient \
-    QtiTelephonyServicelibrary \
-    com.nxp.nfc \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    com.qualcomm.qti.uceservice-V2.1-java \
     com.quicinc.cne.api-V1.1-java \
     com.quicinc.cne.constants-V1.0-java \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
-    embmslibrary \
-    qcrilhook \
-    qti-telephony-common \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.data.factory-V2.1-java \
     vendor.qti.data.slm-V1.0-java \
-    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.bluetooth_dun-V1.0-java \
     vendor.qti.hardware.capabilityconfigstore-V1.0-java \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
@@ -2385,16 +1201,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.connection-V1.1-java \
     vendor.qti.hardware.data.dynamicdds-V1.0-java \
     vendor.qti.hardware.data.iwlan-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
     vendor.qti.hardware.data.qmi-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
-    vendor.qti.hardware.wigig.netperftuner-V1.0-java \
-    vendor.qti.hardware.wigig.supptunnel-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.1-java \
-    vendor.qti.latency-V2.0-java \
-    vendor.qti.voiceprint-V1.0-java \
-    android.hardware.atrace@1.0-service \
     android.hardware.gnss@2.0-service-qti \
     vendor.qti.gnss@3.0-service
