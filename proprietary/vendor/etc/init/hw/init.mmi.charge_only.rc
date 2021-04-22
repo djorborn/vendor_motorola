@@ -1,6 +1,5 @@
 on moto-charger
     setprop ro.board.platform mot6150
-    load_system_props
     trigger firmware_mounts_complete
     write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
     write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
