@@ -1,0 +1,123 @@
+{
+  "config":{
+    "hw_platform": ["IDP"],
+    "soc_id": ["394"]
+  },
+  "tmd2750_platform":{
+    "owner": "sns_tmd2750",
+    ".config":{
+      "owner": "sns_tmd2750",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "9"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "73"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "91"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/see/rail/eLDO"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tmd2750",
+      ".fac_cal":{
+        "owner": "sns_tmd2750",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tmd2750",
+      ".fac_cal":{
+        "owner": "sns_tmd2750",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "80.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "50.0"
+        }
+      }
+    },
+	".coefficient":{
+      "owner": "sns_tmd2750",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "940.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.158"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "-0.158"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "-0.947"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "4868.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "1711.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "4868.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "1711.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.1"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "600.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "3500.0"
+      }
+    }
+  }
+}
