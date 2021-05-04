@@ -1,0 +1,123 @@
+{
+  "config":{
+    "hw_platform": ["IDP"],
+    "soc_id": ["394"]
+  },
+  "tsl2540_platform":{
+    "owner": "sns_tsl2540",
+    ".config":{
+      "owner": "sns_tsl2540",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "9"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "94"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/see/rail/eLDO"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tsl2540",
+      ".fac_cal":{
+        "owner": "sns_tsl2540",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_tsl2540",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "6353.444"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "-0.14"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.382"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "-0.027"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "600.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  },
+  "ambient_light":{
+    "owner": "sns_tsl2540",
+    ".coefficient":{
+      "owner": "sns_tsl2540",
+      "ch0_scale":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "ch1_scale":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "ch0_target":{ "type": "flt", "ver": "0",
+        "data": "200.0"
+      },
+      "ch1_target":{ "type": "flt", "ver": "0",
+        "data": "20.0"
+      },
+      "lux_scale":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "lux_target":{ "type": "flt", "ver": "0",
+        "data": "200.0"
+      }
+    }
+  }
+}
